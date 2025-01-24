@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Alert Example</title>
+    <!-- Link CSS dari GitHub -->
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <button onclick="showSuccessAlert()">Show Success Alert</button>
+    <button onclick="showErrorAlert()">Show Error Alert</button>
+
+    <!-- Script JS dari GitHub -->
+    <script src="./alert.js"></script>
+
+    <script>
+        function showSuccessAlert() {
+            cuteAlert({
+                type: 'success',
+                title: 'Success',
+                message: 'This is a success message!',
+                buttonText: 'OK'
+            });
+        }
+
+        function showErrorAlert() {
+            cuteAlert({
+                type: 'error',
+                title: 'Error',
+                message: 'This is an error message!',
+                buttonText: 'OK'
+            });
+        }
+    </script>
+</body>
+</html>
